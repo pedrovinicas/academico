@@ -1,24 +1,32 @@
-import { ArrowUpRight } from "lucide-react";
+// components/Biografia.tsx
 import Link from "next/link";
 
-export default function Intro() {
+export default function Biografia() {
   return (
-    <section className="mt-8 text-zinc-600 dark:text-zinc-400">
-      <div className="space-y-4">
-        {/* Primeiro Parágrafo da Bio */}
+    <>
+      {/* Nome com destaque */}
+      <h1 className="mt-0 mb-1 text-2xl font-bold tracking-tight dark:text-white">
+        Pedro Vinícius de Castro
+      </h1>
+
+      {/* Subtítulo curto e com cor mais sutil */}
+      <div className="text-base text-zinc-500 dark:text-zinc-400">
+        Historiador com pesquisa focada na intersecção entre a cultura material japonesa e a experiência imigrante no Brasil.
+      </div>
+
+      {/* Divisor e biografia completa */}
+      <div className="mt-8 space-y-4 text-zinc-600 dark:text-zinc-400">
         <p>
           Historiador pela{" "}
           <Link href="https://fflch.usp.br/" target="_blank" className="link text-black dark:text-white/95 underline underline-offset-auto">
             Universidade de São Paulo (FFLCH-USP)
           </Link>
-          , com trajetória de pesquisa focada na intersecção entre a cultura material japonesa e a experiência imigrante no Brasil. Sua investigação atual, centrada na pesquisa e catalogação da coleção da Família Kojima no{" "}
+          , sua investigação atual, centrada na pesquisa e catalogação da coleção da Família Kojima no{" "}
           <Link href="https://museudoipiranga.org.br/" target="_blank" className="link text-black dark:text-white/95 underline underline-offset-auto">
             Museu Paulista
           </Link>{" "}
           (sob coordenação da Prof. Dra. Vânia Carneiro de Carvalho), serve como base para seu projeto de mestrado, que analisa as adaptações, permanências e rupturas no espaço doméstico dos imigrantes japoneses. Sua experiência anterior inclui a Iniciação Científica "Orientalismo no Oriente: o Egito na cultura pop japonesa" (orient. Dra. Thais Rocha da Silva), na qual analisou dinâmicas de ressignificação cultural.
         </p>
-        
-        {/* Segundo Parágrafo da Bio */}
         <p>
           É pesquisador vinculado ao{" "}
           <Link href="https://sites.usp.br/gema/" target="_blank" className="link text-black dark:text-white/95 underline underline-offset-auto">
@@ -31,8 +39,8 @@ export default function Intro() {
           .
         </p>
       </div>
-
-      {/* Separador */}
+      
+      {/* Separador e Contato */}
       <svg
         aria-hidden="true"
         width="80"
@@ -46,8 +54,6 @@ export default function Intro() {
           fill="currentColor"
         ></path>
       </svg>
-      
-      {/* Seção de Contato */}
       <div>
         Para contato profissional ou acadêmico:{" "}
         <a
@@ -67,6 +73,6 @@ export default function Intro() {
         </a>
         .
       </div>
-    </section>
+    </>
   );
 }
