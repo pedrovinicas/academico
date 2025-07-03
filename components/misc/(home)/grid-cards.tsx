@@ -6,7 +6,7 @@ export const GridCards = () => {
       {/* Card 1: Materialidade */}
       <div className="lg:col-span-1">
         <ProjectCard
-          href="/work"
+          href="/publicacoes"
           title="Materialidade no espaço doméstico nipo-brasileiro"
           description="Investigando o espaço doméstico e a cultura material na diáspora nipo-brasileira."
           imageUrl="/images/card-materialidade.jpg"
@@ -16,7 +16,7 @@ export const GridCards = () => {
       {/* Card 2: Coleção Kojima */}
       <div className="lg:col-span-2">
         <ProjectCard
-          href="/work"
+          href="/publicacoes"
           title="A Coleção Kojima do Museu do Ipiranga"
           description="Pesquisa e catalogação da Família Kojima para o Museu do Ipiranga."
           imageUrl="/images/card-kojima.jpg"
