@@ -18,7 +18,6 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
-import { submitForm } from "@/lib/submit-form";
 
 const formSchema = z.object({
   email: z
@@ -49,7 +48,6 @@ const ContactCard = () => {
       },
     });
     const { email, message } = values;
-    submitForm(email, message);
     form.reset(
       {
         email: "",
