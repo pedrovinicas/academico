@@ -1,6 +1,6 @@
 import ContactCard from "@/components/misc/(home)/cards/contact-card";
 import { GridCards } from "@/components/misc/(home)/grid-cards";
-import { Intro } from "@/components/misc/(home)/intro";
+import Intro from "@/components/misc/(home)/intro";
 
 const Home = () => {
   return (
