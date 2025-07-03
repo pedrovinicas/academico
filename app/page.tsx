@@ -1,6 +1,6 @@
 // import ContactCard from "@/components/misc/(home)/cards/contact-card";
 import { GridCards } from "@/components/misc/(home)/grid-cards";
-import Intro from "@/components/misc/(home)/intro"; // <-- CORREÇÃO APLICADA AQUI
+import Intro from "@/components/misc/(home)/intro"; // <-- ESTA É A LINHA CORRIGIDA (SEM AS CHAVES)
 
 const Home = () => {
   return (
