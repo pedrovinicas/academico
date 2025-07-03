@@ -1,24 +1,24 @@
-import InfoCard from "@/components/InfoCard";
+import InfoCard from "./InfoCard";
 
-// Aqui definimos as informações de cada card. Fácil de editar no futuro!
+// As informações de cada card com os nomes das imagens corrigidos
 const cardsData = [
   {
     title: "Publicações",
     description: "Artigos, capítulos de livros e trabalhos apresentados em eventos acadêmicos.",
     href: "/publicacoes",
-    imgSrc: "/images/card-publicacoes.jpg", // Caminho para a imagem que você colocou na pasta public
+    imgSrc: "/images/card-publicacoes.png", // <-- CORRIGIDO AQUI
   },
   {
     title: "Grupos de Pesquisa",
     description: "Conheça o GEMA e o NEJAP, grupos dos quais faço parte e que fomentam o debate acadêmico.",
-    href: "/projetos", // Pode ajustar este link se criar uma página específica para grupos
-    imgSrc: "/images/card-grupos.jpg",
+    href: "/projetos",
+    imgSrc: "/images/card-grupos.png", // <-- CORRIGIDO AQUI
   },
   {
     title: "Divulgação Científica",
     description: "Minhas participações em podcasts e outras iniciativas de História Pública.",
-    href: "/#", // Pode ajustar este link no futuro
-    imgSrc: "/images/card-divulgacao.jpg",
+    href: "/#",
+    imgSrc: "/images/card-divulgacao.png", // <-- CORRIGIDO AQUI
   },
 ];
 
