@@ -1,4 +1,4 @@
-import Intro from "@/components/misc/(home)/intro"; // <-- A CORREÇÃO ESTÁ AQUI (SEM AS CHAVES)
+import Intro from "@/components/misc/(home)/intro";
 
 const Home = () => {
   return (
@@ -9,8 +9,11 @@ const Home = () => {
       <div className="max-w-[58ch] text-zinc-600 dark:text-zinc-400">
         Historiador; explorando as conexões entre cultura material, migração e identidade no Japão Meiji e no Brasil.
       </div>
+
       <Intro />
-      {/* <ContactCard /> */}
+
+      {/* A seção de GridCards foi removida daqui para resolver o timeout */}
+      
     </section>
   );
 };

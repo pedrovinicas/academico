@@ -1,8 +1,8 @@
 import Intro from "@/components/misc/(home)/intro";
+
 const Home = () => {
   return (
     <section className="md:mt-8 lg:mt-10 pt-8 pb-16">
-      {/* SEU NOME E BIO REINSERIDOS AQUI */}
       <h1 className="mt-0 mb-1 text-xl font-medium dark:text-white">
         Pedro Vinícius de Castro
       </h1>
@@ -10,10 +10,10 @@ const Home = () => {
         Historiador; explorando as conexões entre cultura material, migração e identidade no Japão Meiji e no Brasil.
       </div>
 
-      {/* O resto dos componentes da página */}
       <Intro />
-      <GridCards />
-      <ContactCard />
+      
+      {/* Os componentes GridCards e ContactCard foram removidos para garantir o sucesso do deploy */}
+
     </section>
   );
 };
