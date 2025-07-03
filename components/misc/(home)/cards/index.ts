@@ -1,12 +1,7 @@
-export * from "./images-card";
+// ANTES
 export * from "./gh-stats";
 export * from "./animelink-card";
-export * from "./dc-status";
+export * from "./dc-status"; // <--- LINHA DO PROBLEMA
 export * from "./locate-me";
 export * from "./wakatime-stats";
 export * from "./current-time";
-export * from "./stacks-card";
-export * from "./music-card";
-export * from "./links-card";
-export * from "./gh-link";
-export * from "./books-card";
