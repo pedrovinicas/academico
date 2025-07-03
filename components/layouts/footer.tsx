@@ -20,7 +20,7 @@ export const Footer = ({ className, ...props }: ComponentProps<"footer">) => {
 
         {/* <-- MUDANÇA AQUI: Créditos atualizados */}
         <span className="text-zinc-500 dark:text-zinc-400">
-          Desenvolvido por Pedro de Castro
+          Tema desenvolvido por @arunava
         </span>
       </div>
     </footer>
