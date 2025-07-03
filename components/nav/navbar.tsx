@@ -3,15 +3,18 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-// import { NavMenu } from "./navmenu"; // Não precisamos mais importar
 
-// ... (o resto do seu código, como a lista navItems, continua igual)
+// --- A "RECEITA" (TYPE) QUE ESTAVA FALTANDO ---
+type navItems = {
+  name: string;
+  href: string;
+}[];
+
 const navItems: navItems = [
   { name: "~", href: "/" },
   { name: "Projetos", href: "/projetos" },
   { name: "Publicações", href: "/publicacoes" },
 ];
-
 
 const NavBar = () => {
   const path = usePathname();
@@ -42,7 +45,7 @@ const NavBar = () => {
             </Link>
           </div>
         ))}
-        {/* <NavMenu />  <-- A LINHA FOI REMOVIDA DAQUI */}
+        {/* A linha do NavMenu foi removida */}
       </nav>
     </div>
   );
