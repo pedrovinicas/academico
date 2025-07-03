@@ -4,25 +4,23 @@ import "@/app/globals.css";
 import { Footer } from "@/components/layouts/footer";
 import Header from "@/components/layouts/header";
 import { ThemeProvider } from "@/components/misc/(theme)/theme-provider";
-import { Analytics } from "@/components/misc/analytics";
+// import { Analytics } from "@/components/misc/analytics"; // <-- LINHA REMOVIDA
 import { Toaster } from "@/components/ui/sonner";
 import gradientImg from "@/public/images/gradient.webp";
 import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// --- Bloco de Informações Atualizado ---
 const info = {
   name: "Pedro de Castro",
-  // twitter: "@seu_twitter_aqui", // <-- Deixei comentado para você adicionar no futuro
   description: "Historiador; explorando as conexões entre cultura material, migração e identidade no Japão Meiji e no Brasil.",
-  url: "https://seunovosite.com", // <-- IMPORTANTE: Coloque seu novo domínio aqui quando tiver
+  url: "https://seunovosite.com", // IMPORTANTE: Coloque seu novo domínio aqui quando tiver
   image: "/meta/meta.png",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(info.url),
-  title: { // <-- MUDANÇA AQUI: Formato de título aprimorado
+  title: {
     default: info.name,
     template: `%s | ${info.name}`,
   },
@@ -43,7 +41,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: info.name,
     description: info.description,
-    // creator: info.twitter, // <-- MUDANÇA AQUI: Removido por enquanto
     images: info.image,
   },
 };
@@ -79,7 +76,7 @@ export default function RootLayout({ children }: ChildrenProps) {
           <Toaster />
         </ThemeProvider>
       </body>
-      <Analytics />
+      {/* <Analytics /> */} {/* <-- LINHA REMOVIDA */}
       <link
         href="/favicons/favicon-light.ico"
         rel="icon"
