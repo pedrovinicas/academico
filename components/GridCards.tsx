@@ -1,6 +1,6 @@
 import InfoCard from "./InfoCard";
 
-// As informações de cada card com os nomes das imagens corrigidos
+// As informações de cada card com a extensão .jpeg correta
 const cardsData = [
   {
     title: "Publicações",
