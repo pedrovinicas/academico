@@ -4,53 +4,69 @@ import Link from "next/link";
 export const Intro = () => {
   return (
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
-      <div className="space-y-5">
+      <div className="space-y-4">
+        {/* Sua biografia acadêmica detalhada */}
         <p>
-          hi, i'm arunava (a.k.a
-          <a
-            className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
-            href="https://www.vimfn.in/alias"
-          >
-            vimfn
-          </a>{" "}
-          on the internet) currently a cs undergrad at [redacted], my interests
-          include compilers, computer networks, and ctfs.
+          Graduado em História pela{" "}
+          <Link href="https://fflch.usp.br/" target="_blank" className="link text-black dark:text-white/95 underline underline-offset-auto">
+            Universidade de São Paulo (FFLCH-USP)
+          </Link>
+          , desenvolve uma pesquisa sobre Cultura Material no espaço doméstico
+          durante os períodos Meiji, Taisho e Showa e suas dinâmicas de adaptação
+          na diáspora nipônica em São Paulo, em parceria com o{" "}
+          <Link href="https://museudoipiranga.org.br/" target="_blank" className="link text-black dark:text-white/95 underline underline-offset-auto">
+            Museu Paulista
+          </Link>
+          . É membro do{" "}
+          <Link href="https://sites.usp.br/gema/" target="_blank" className="link text-black dark:text-white/95 underline underline-offset-auto">
+            GEMA (Grupo de Pesquisa Espaço Doméstico, Corpo e Materialidades)
+          </Link>{" "}
+          e{" "}
+          <Link href="https://nejap.paginas.ufsc.br/" target="_blank" className="link text-black dark:text-white/95 underline underline-offset-auto">
+            NEJAP (Núcleo de Estudos Japoneses)
+          </Link>
+          , um grupo interinstitucional que reúne integrantes de diversas
+          filiações acadêmicas. Anteriormente, foi pesquisador do{" "}
+          <Link href="https://laop.fflch.usp.br/" target="_blank" className="link text-black dark:text-white/95 underline underline-offset-auto">
+            Laboratório do Antigo Oriente-Próximo da Universidade de São Paulo
+          </Link>
+          , onde conduziu o projeto “Orientalismo no Oriente: representações do
+          Antigo Egito na cultura pop japonesa”, sob orientação da Dra. Thais
+          Rocha da Silva (UFMG/Oxford).
         </p>
         <p>
-          beyond my studies, i enjoy my time playing chess, jamming to music,
-          modding factorio or just tinkering with stuff to understand how they
-          work.
+          Atua como divulgador científico em História Pública no podcast{" "}
+          <Link href="https://open.spotify.com/show/053p0I6a1pFF1Tz3c8l6nS" target="_blank" className="link text-black dark:text-white/95 underline underline-offset-auto">
+            Historiae
+          </Link>{" "}
+          e é pesquisador associado do{" "}
+          <Link href="https://www.ees.ac.uk/resource/being-egyptian.html" target="_blank" className="link text-black dark:text-white/95 underline underline-offset-auto">
+            Being Egyptian
+          </Link>
+          , projeto sobre espaço doméstico na Antiguidade, mantido pela The
+          Egyptian Exploration Society e a Universidade de Oxford.
         </p>
-        <p>
-          ps i love simplicity and a great admirer of unix philosophy,
-          minimalism and hacker ethics.
-        </p>
-        <br />
-        🚧 note: this site isn't ready yet, you should better be visting
-        <a
-          className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
-          href="https://www.vimfn.in"
-        >
-          vimfn.in
-        </a> for any info.
-        <br />
-        <div>
+        
+        {/* Links de navegação interna */}
+        <div className="flex gap-3">
           <Link
-            href="/notes"
+            href="/publicacoes" // Mudei o link para /publicacoes
             className="inline-flex link text-black relative dark:text-white/95"
           >
-            notes{" "}
+            Publicações{" "}
             <ArrowUpRight size={10} className="mt-1 ml-[2px] items-center" />
           </Link>
           <Link
-            href="/work"
-            className="ml-2 inline-flex link text-black relative dark:text-white/95"
+            href="/projetos" // Mudei o link para /projetos
+            className="inline-flex link text-black relative dark:text-white/95"
           >
-            work + exp.{" "}
+            Projetos{" "}
             <ArrowUpRight size={10} className="mt-1 ml-[2px] items-center" />
           </Link>
         </div>
       </div>
+
+      {/* Separador */}
       <svg
         aria-hidden="true"
         width="80"
@@ -64,22 +80,24 @@ export const Intro = () => {
           fill="currentColor"
         ></path>
       </svg>
+      
+      {/* Seção de Contato Atualizada */}
       <div>
-        feel free to reach me out at
+        Para contato profissional ou acadêmico:
         <a
           className="link text-black dark:text-white/95 mx-1 underline underline-offset-auto"
-          href="http://x.com/vimfnx"
+          href="mailto:pedro.cas@usp.br"
+        >
+          email
+        </a>
+        ou
+        <a
+          className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
+          href="https://lattes.cnpq.br/1970471858793746"
           target="_blank"
           rel="noopener noreferrer"
         >
-          x.com
-        </a>
-        or drop an
-        <a
-          className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
-          href="mailto:hi@vimfn.in"
-        >
-          email
+          Lattes
         </a>
         .
       </div>

@@ -3,18 +3,15 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { NavMenu } from "./navmenu";
+// import { NavMenu } from "./navmenu"; // Não precisamos mais importar
 
-type navItems = {
-  name: string;
-  href: string;
-}[];
-
+// ... (o resto do seu código, como a lista navItems, continua igual)
 const navItems: navItems = [
   { name: "~", href: "/" },
-  { name: "work", href: "/work" },
-  { name: "notes", href: "/notes" },
+  { name: "Projetos", href: "/projetos" },
+  { name: "Publicações", href: "/publicacoes" },
 ];
+
 
 const NavBar = () => {
   const path = usePathname();
@@ -45,7 +42,7 @@ const NavBar = () => {
             </Link>
           </div>
         ))}
-        <NavMenu />
+        {/* <NavMenu />  <-- A LINHA FOI REMOVIDA DAQUI */}
       </nav>
     </div>
   );

@@ -34,9 +34,6 @@ const formSchema = z.object({
 const ContactCard = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    // https://react.dev/reference/react-dom/components/input#im-getting-an-error-a-component-is-changing-an-uncontrolled-input-to-be-controlled
-    // the library should handle this by themselves bruh
-    // i really hate how react got around being huge piece of mess, needs fix.
     defaultValues: {
       email: "",
       message: "",
@@ -48,7 +45,6 @@ const ContactCard = () => {
       description: "Thanks, I'll get back to you ASAP.",
       action: {
         label: "Undo",
-        // TODO: Undo Functionality + x3 for :)
         onClick: () => console.log("implement undo function"),
       },
     });
@@ -66,7 +62,7 @@ const ContactCard = () => {
   }
 
   return (
-    <div className="mt-3 md:mt-0 w-full h-64 rounded-lg bg-[#f7f2f2] dark:bg-[#191919] px-2">
+    <div className="mt-16 w-full h-64 rounded-lg bg-[#f7f2f2] dark:bg-[#191919] px-2">
       <Form {...form}>
         <p className="px-2 py-1 font-semibold text-md pt-2">Drop a message</p>
         <div className="mt-1">
@@ -77,7 +73,8 @@ const ContactCard = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Input placeholder="hi@vimfn.in" {...field} />
+                    {/* <-- MUDANÇA AQUI: Placeholder do email atualizado */}
+                    <Input placeholder="pedro.cas@usp.br" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -91,7 +88,7 @@ const ContactCard = () => {
                   <FormItem>
                     <FormControl>
                       <Textarea
-                        placeholder="your message here"
+                        placeholder="Sua mensagem aqui"
                         className="h-28 w-full"
                         {...field}
                       />
