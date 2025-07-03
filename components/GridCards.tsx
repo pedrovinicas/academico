@@ -6,19 +6,19 @@ const cardsData = [
     title: "Publicações",
     description: "Artigos, capítulos de livros e trabalhos apresentados em eventos acadêmicos.",
     href: "/publicacoes",
-    imgSrc: "/images/card-publicacoes.png", // <-- CORRIGIDO AQUI
+    imgSrc: "/images/card-publicacoes.jpeg", // <-- CORRIGIDO AQUI
   },
   {
     title: "Grupos de Pesquisa",
     description: "Conheça o GEMA e o NEJAP, grupos dos quais faço parte e que fomentam o debate acadêmico.",
     href: "/projetos",
-    imgSrc: "/images/card-grupos.png", // <-- CORRIGIDO AQUI
+    imgSrc: "/images/card-grupos.jpeg", // <-- CORRIGIDO AQUI
   },
   {
     title: "Divulgação Científica",
     description: "Minhas participações em podcasts e outras iniciativas de História Pública.",
     href: "/#",
-    imgSrc: "/images/card-divulgacao.png", // <-- CORRIGIDO AQUI
+    imgSrc: "/images/card-divulgacao.jpeg", // <-- CORRIGIDO AQUI
   },
 ];
 
