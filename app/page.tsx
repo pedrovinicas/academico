@@ -1,5 +1,3 @@
-// import ContactCard from "@/components/misc/(home)/cards/contact-card";
-import { GridCards } from "@/components/misc/(home)/grid-cards";
 import Intro from "@/components/misc/(home)/intro"; // <-- A CORREÇÃO ESTÁ AQUI (SEM AS CHAVES)
 
 const Home = () => {
@@ -12,7 +10,6 @@ const Home = () => {
         Historiador; explorando as conexões entre cultura material, migração e identidade no Japão Meiji e no Brasil.
       </div>
       <Intro />
-      <GridCards />
       {/* <ContactCard /> */}
     </section>
   );
