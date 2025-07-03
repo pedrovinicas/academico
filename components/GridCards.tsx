@@ -1,4 +1,4 @@
-import InfoCard from "./InfoCard";
+import InfoCard from "@/components/InfoCard";
 
 // Aqui definimos as informações de cada card. Fácil de editar no futuro!
 const cardsData = [
