@@ -1,24 +1,24 @@
 import InfoCard from "./InfoCard";
 
-// As informações de cada card com a extensão .jpeg correta
+// As informações com as extensões EXATAS das suas imagens
 const cardsData = [
   {
     title: "Publicações",
     description: "Artigos, capítulos de livros e trabalhos apresentados em eventos acadêmicos.",
     href: "/publicacoes",
-    imgSrc: "/images/card-publicacoes.jpeg", // <-- CORRIGIDO AQUI
+    imgSrc: "/images/card-publicacoes.jpg", // <-- CORRIGIDO para .jpg
   },
   {
     title: "Grupos de Pesquisa",
     description: "Conheça o GEMA e o NEJAP, grupos dos quais faço parte e que fomentam o debate acadêmico.",
     href: "/projetos",
-    imgSrc: "/images/card-grupos.jpeg", // <-- CORRIGIDO AQUI
+    imgSrc: "/images/card-grupos.jpg", // <-- CORRIGIDO para .jpg
   },
   {
     title: "Divulgação Científica",
     description: "Minhas participações em podcasts e outras iniciativas de História Pública.",
     href: "/#",
-    imgSrc: "/images/card-divulgacao.jpeg", // <-- CORRIGIDO AQUI
+    imgSrc: "/images/card-divulgacao.jpeg", // <-- Este já estava correto
   },
 ];
 
