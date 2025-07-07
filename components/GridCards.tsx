@@ -6,7 +6,7 @@ const cardsData = [
     title: "Publicações",
     description: "Artigos, capítulos de livros e trabalhos apresentados em eventos acadêmicos.",
     href: "/publicacoes",
-    imgSrc: "/images/card-publicacoes.jpg", // <-- CORRIGIDO para .jpg
+    imgSrc: "/images/ard-publicacoes.gif", // <-- CORRIGIDO para .jpg
   },
   {
     title: "Grupos de Pesquisa",
@@ -18,7 +18,7 @@ const cardsData = [
     title: "Divulgação Científica",
     description: "Minhas participações em podcasts e outras iniciativas de História Pública.",
     href: "/#",
-    imgSrc: "/images/card-divulgacao.jpeg", // <-- Este já estava correto
+    imgSrc: "/images/card-divulgacao.jpg", // <-- Este já estava correto
   },
 ];
 
