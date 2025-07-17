@@ -34,10 +34,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  verification: {
-    // --- SUA CHAVE FOI COLADA AQUI ---
-    google: "ruQruQtSyF5ZLiSJ3IzXuzLOJ8wCMdUw5PyLdIuDR3wVpk",
-  },
+  // A propriedade 'verification' foi removida daqui para evitar conflitos.
 
   openGraph: {
     type: "website",
@@ -85,6 +82,13 @@ export default function RootLayout({ children }: ChildrenProps) {
           <Toaster />
         </ThemeProvider>
       </body>
+
+      {/* --- TAG DO GOOGLE ADICIONADA DIRETAMENTE AQUI --- */}
+      <meta
+        name="google-site-verification"
+        content="ruQtSyF5ZLiSJ3IzXuzLOJ8wCMdUw5PyLdIuDR3wVpk"
+      />
+
       <link
         href="/favicons/favicon-light.ico"
         rel="icon"
