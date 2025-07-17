@@ -1,11 +1,11 @@
-export default function robots() {
+import type { MetadataRoute } from 'next'
+
+export default function robots(): MetadataRoute.Robots {
   return {
-    rules: [
-      {
-        userAgent: "*",
-      },
-    ],
-    sitemap: "https://beta.vimfn.in/sitemap.xml",
-    host: "https://beta.vimfn.in",
-  };
+    rules: {
+      userAgent: '*',
+      allow: '/',
+    },
+    sitemap: 'https://pedrocas.vercel.app/sitemap.xml',
+  }
 }

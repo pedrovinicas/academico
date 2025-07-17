@@ -4,7 +4,6 @@ import "@/app/globals.css";
 import { Footer } from "@/components/layouts/footer";
 import Header from "@/components/layouts/header";
 import { ThemeProvider } from "@/components/misc/(theme)/theme-provider";
-// import { Analytics } from "@/components/misc/analytics"; // <-- LINHA REMOVIDA
 import { Toaster } from "@/components/ui/sonner";
 import gradientImg from "@/public/images/gradient.webp";
 import Image from "next/image";
@@ -14,7 +13,8 @@ const inter = Inter({ subsets: ["latin"] });
 const info = {
   name: "Pedro de Castro",
   description: "Historiador; explorando as conexões entre cultura material, migração e identidade no Japão Meiji e no Brasil.",
-  url: "https://seunovosite.com", // IMPORTANTE: Coloque seu novo domínio aqui quando tiver
+  // --- ALTERADO AQUI ---
+  url: "https://pedrocas.vercel.app", 
   image: "/meta/meta.png",
 };
 
@@ -30,6 +30,17 @@ export const metadata: Metadata = {
     url: info.url,
   },
   creator: info.name,
+  
+  // --- ADICIONADO AQUI ---
+  robots: {
+    index: true,
+    follow: true,
+  },
+  verification: {
+    google: "COLE_SUA_CHAVE_DO_GOOGLE_AQUI",
+  },
+  // --- FIM DA ADIÇÃO ---
+
   openGraph: {
     type: "website",
     url: info.url,
@@ -51,7 +62,7 @@ interface ChildrenProps {
 
 export default function RootLayout({ children }: ChildrenProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="pt-BR" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -76,7 +87,6 @@ export default function RootLayout({ children }: ChildrenProps) {
           <Toaster />
         </ThemeProvider>
       </body>
-      {/* <Analytics /> */} {/* <-- LINHA REMOVIDA */}
       <link
         href="/favicons/favicon-light.ico"
         rel="icon"
