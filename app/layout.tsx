@@ -13,7 +13,6 @@ const inter = Inter({ subsets: ["latin"] });
 const info = {
   name: "Pedro de Castro",
   description: "Historiador; explorando as conexões entre cultura material, migração e identidade no Japão Meiji e no Brasil.",
-  // --- ALTERADO AQUI ---
   url: "https://pedrocas.vercel.app", 
   image: "/meta/meta.png",
 };
@@ -31,15 +30,14 @@ export const metadata: Metadata = {
   },
   creator: info.name,
   
-  // --- ADICIONADO AQUI ---
   robots: {
     index: true,
     follow: true,
   },
   verification: {
-    google: "r<meta name="google-site-verification" content="ruQtSyF5ZLiSJ3IzXuzLOJ8wCMdUw5PyLdIuDR3wVpk" />",
+    // --- SUA CHAVE FOI COLADA AQUI ---
+    google: "ruQtSyF5ZLiSJ3IzXuzLOJ8wCMdUw5PyLdIuDR3wVpk",
   },
-  // --- FIM DA ADIÇÃO ---
 
   openGraph: {
     type: "website",
