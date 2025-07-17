@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   verification: {
     // --- SUA CHAVE FOI COLADA AQUI ---
-    google: "ruQtSyF5ZLiSJ3IzXuzLOJ8wCMdUw5PyLdIuDR3wVpk",
+    google: "ruQruQtSyF5ZLiSJ3IzXuzLOJ8wCMdUw5PyLdIuDR3wVpk",
   },
 
   openGraph: {
