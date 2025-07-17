@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   verification: {
-    google: "COLE_SUA_CHAVE_DO_GOOGLE_AQUI",
+    google: "ruQtSyF5ZLiSJ3IzXuzLOJ",
   },
   // --- FIM DA ADIÇÃO ---
 
